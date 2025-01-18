@@ -1,0 +1,73 @@
+.container {
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  -webkit-app-region: drag;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif; /* Use your chosen font here */
+  font-weight: 600; /* Make it bold */
+  font-size: 24px; /* Adjust the size */
+  color: #333; /* A modern text color */
+  margin: 0;
+  /* text-align: center; */
+  align-self: flex-start;
+  /* font-size: 1.5rem; */
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.input {
+  -webkit-app-region: no-drag;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.close-button {
+  -webkit-app-region: no-drag;
+  /* position: absolute;
+  top: 10px;
+  right: 10px; */
+  margin-top: -10px;
+  margin-right: -10px;
+  width: 12px;
+  height: 12px;
+  background-color: #ff5f56;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.close-button:hover {
+  background-color: #ff4c4c;
+}
